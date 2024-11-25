@@ -1,9 +1,9 @@
 const cacheName = "DefaultCompany-LineAuthorization-1.0";
 const contentToCache = [
     "Build/Test.loader.js",
-    "Build/Test.framework.js",
-    "Build/Test.data",
-    "Build/Test.wasm",
+    "Build/Test.framework.js.br",
+    "Build/Test.data.br",
+    "Build/Test.wasm.br",
     "TemplateData/style.css"
 
 ];
