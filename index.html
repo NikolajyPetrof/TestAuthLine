@@ -111,10 +111,12 @@
           // Проверяем, что LIFF загружен
           if (!window.liff) {
             console.error("LIFF SDK not loaded");
+            SendMessage("LoadingScene", "UpdateTitle", JSON.stringify("LIFF SDK not loaded"));
             return;
           }
           if (!window.LIFFInspectorPlugin) {
             console.error("LIFF Inspector Plugin not loaded");
+            SendMessage("LoadingScene", "UpdateTitle", JSON.stringify("LIFF Inspector Plugin not loaded"));
             return;
           }
 
@@ -124,7 +126,7 @@
           // Инициализируем LIFF
           await liff.init({ liffId: "2006614433-qeGxM31A" }); // Замените LIFF ID
           console.log("LIFF initialized successfully");
-          SendMessage("LoadingScene", "UpdateTitle", JSON.stringify("IFF initialized"));
+          SendMessage("LoadingScene", "UpdateTitle", JSON.stringify("LIFF initialized"));
         } catch (error) {
           console.error("LIFF initialization failed:", error);
           SendMessage("LoadingScene", "UpdateTitle", JSON.stringify(error));
