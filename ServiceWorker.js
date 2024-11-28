@@ -1,4 +1,4 @@
-const cacheName = "DefaultCompany-LineAuthorization-1.0";
+const cacheName = "DefaultCompany-LineAuthorization-1.0.10";
 const contentToCache = [
     "Build/Test.loader.js",
     "Build/Test.framework.js",
